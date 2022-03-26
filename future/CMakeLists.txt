@@ -35,7 +35,7 @@ link_libraries(Threads::Threads)
 if (YACLIB)
   FetchContent_Declare(yaclib
     GIT_REPOSITORY https://github.com/YACLib/YACLib.git
-    GIT_TAG main
+    GIT_TAG "${YACLIB}"
     )
   FetchContent_MakeAvailable(yaclib)
   link_libraries(yaclib)
